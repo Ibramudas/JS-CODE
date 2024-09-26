@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>OBJECT VARIABLES</title>
+    </head>
+<body>
+<h1>ARGUMENTS</h1>
+<h3 id="h3"></h3>
+<script>
+    function findMax()
+    {
+        var i;
+        var max=0;
+        for (i=0; i<arguments.length;i++)
+    {
+        if (arguments [i]>max)
+    {
+        max=arguments[i];
+        
+    }
+    }
+    return max
+}
+    document.getElementById("h3").innerHTML=findMax(12,36,48,95,68,798);
+    
+</script>
