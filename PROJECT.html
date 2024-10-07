@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>OBJECT VARIABLES</title>
+</head>
+<body>
+  <h1>ARGUMENTS</h1>
+  <h3 id="h3"></h3>
+
+  <script>
+    // Function to find the sum
+    function findSum(...args) {
+      let sum = 0;
+      args.forEach(num => sum += num);
+      return sum;
+    }
+
+    // Call the function and display the result
+    document.getElementById("h3").innerHTML = `Sum: ${findSum(12, 36, 48, 95, 68, 798)}`;
+  </script>
+</body>
+</html>
+
